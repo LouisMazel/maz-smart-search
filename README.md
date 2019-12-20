@@ -1,6 +1,6 @@
 # Smart-Search
 
-![logo](https://louismazel.github.io/vue-mazel-ui/img/logo-base-dodgerblue.1d65c144.png)
+![logo](./assets/logo.png)
 
 > Smart-Search is a JavaScript library that perform fuzzy-search through a list of entries.
 
