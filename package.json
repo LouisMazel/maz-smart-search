@@ -2,7 +2,7 @@
   "name": "maz-smart-search",
   "version": "0.1.0",
   "description": "",
-  "main": "lib/smart-search.js",
+  "main": "lib/maz-smart-search.js",
   "scripts": {
     "lint": "eslint index.js",
     "build": "rollup -c",
