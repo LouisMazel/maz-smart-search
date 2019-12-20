@@ -6,10 +6,16 @@
 
 ## Install
 
+### Yarn
+
+```bash
+yarn add maz-smart-search
+```
+
 ### Npm
 
 ```bash
-npm install maz-smart-search
+npm install maz-smart-search --save
 ```
 
 ### CDN
