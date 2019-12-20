@@ -124,15 +124,15 @@ Nested properties could be specified with a dot character.
 > Example:
 
 ```javascript
-  var entries = [
-    {
-      id:0,
-      name:{ first:{ 'Robin' }, last:{ 'David' } },
-      email:'robin.david@gmail.com'
-    },
-    {...}
-  ];
-  var results = smartSearch(entries, patterns, { name: { last: true }, email: true });
+var entries = [
+  {
+    id:0,
+    name:{ first:{ 'Robin' }, last:{ 'David' } },
+    email:'robin.david@gmail.com'
+  },
+  {...}
+];
+var results = smartSearch(entries, patterns, { name: { last: true }, email: true });
 ```
 
 #### options `Object`
@@ -160,10 +160,10 @@ Indicate the maximum of insertions authorisedduring pattern matching.
 > Example:
 
 ```javascript
-  var options = {
-    maxInsertions: 3;
-  };
-  var results = smartSearch(entries, patterns, fields, options);
+var options = {
+  maxInsertions: 3;
+};
+var results = smartSearch(entries, patterns, fields, options);
 ```
 
 #### Return `Array<Object>`
@@ -179,7 +179,7 @@ The properties of each returned object are the following:
 > Example:
 
 ```javascript
-  [
+[
   {
     entry:{id:1, name:'Loris Francois', email:'loris.francois@gmail.com'},
     info:[
@@ -217,8 +217,8 @@ The properties of each returned object are the following:
     },
     ],
     score:1.001
-  },
-  ]
+  }
+]
 ```
 
 ---
