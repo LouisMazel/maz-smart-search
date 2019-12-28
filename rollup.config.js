@@ -11,9 +11,15 @@ export default {
     format: 'cjs'
   },
   plugins: [
-    commonjs(), // prise en charge de require
-    resolve(), // prise en charge des modules depuis node_modules
-    babel(), // transpilation
+    commonjs({
+      sourceMap: false
+    }), // prise en charge de require
+    resolve({
+      browser: true
+    }), // prise en charge des modules depuis node_modules
+    babel({
+      exclude: 'node_modules/**'
+    }), // transpilation
     terser() // minification
   ]
 };

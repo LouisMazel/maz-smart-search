@@ -4,10 +4,15 @@ module.exports = {
       '@babel/preset-env',
       {
         targets: {
-          "node": "8.10"
+          browsers: "> 0.5%, ie >= 9"
         },
-        corejs: "3",
-        useBuiltIns: 'entry'
+        corejs: {
+          version: 3,
+          proposals: false
+        },
+        forceAllTransforms: true,
+        modules: false,
+        useBuiltIns: 'usage'
       }
     ]
   ]
