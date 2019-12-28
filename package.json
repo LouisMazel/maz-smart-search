@@ -1,12 +1,12 @@
 {
   "name": "maz-smart-search",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "A module smart search module",
   "main": "lib/maz-smart-search.js",
   "scripts": {
     "lint": "eslint index.js",
     "build": "rollup -c",
-    "before-publish": "npm run lint && npm run build"
+    "before-publish": "npm audit && npm run lint && npm i && npm run build"
   },
   "files": [
     "lib"
@@ -16,17 +16,30 @@
     "search",
     "maz"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Louis Mazel <me@loicmazuel.com>",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "babel-eslint": "^10.0.3",
+    "core-js": "^3.6.1",
     "eslint": "^6.7.2",
     "rollup": "^1.27.13",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.1.3"
-  }
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/LouisMazel/maz-smart-search/issues"
+  },
+  "homepage": "https://github.com/LouisMazel/maz-smart-search",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LouisMazel/maz-smart-search.git"
+  },
+  "license": "MIT"
 }

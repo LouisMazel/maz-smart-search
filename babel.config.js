@@ -3,10 +3,11 @@ module.exports = {
     [
       '@babel/preset-env',
       {
-        useBuiltIns: 'entry',
         targets: {
-          esmodules: true
-        }
+          "node": "8.10"
+        },
+        corejs: "3",
+        useBuiltIns: 'entry'
       }
     ]
   ]
