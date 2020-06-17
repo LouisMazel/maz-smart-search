@@ -1,6 +1,6 @@
 {
   "name": "maz-smart-search",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A module smart search module",
   "main": "lib/maz-smart-search.js",
   "scripts": {
